@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Surfaces */
+    --background: 0 0% 100%;
+    --foreground: 212 72% 13%;
+    --canvas: 220 20% 97%;
+
+    /* Ink (dark navy blue) */
+    --ink: 212 72% 13%;
+    --ink-soft: 214 26% 38%;
+    --ink-faint: 214 16% 60%;
+
+    /* Brand (deep blue) */
+    --brand: 213 64% 25%;
+    --brand-700: 214 66% 18%;
+    --brand-300: 214 47% 47%;
+
+    /* Brand accent (bright blue, complements dark navy) */
+    --accent: 214 78% 55%;
+    --accent-soft: 214 85% 93%;
+
+    /* Lines + focus */
+    --line: 214 24% 91%;
+    --ring: 213 64% 25%;
+
+    --radius: 1.25rem;
+  }
+
+  * {
+    @apply border-line;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-background text-ink font-sans antialiased;
+    font-feature-settings: "ss01", "cv01", "cv11";
+  }
+
+  ::selection {
+    background: hsl(var(--brand) / 0.14);
+    color: hsl(var(--ink));
+  }
+
+  /* Respect reduced motion globally */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Mono eyebrow / label treatment — the signature utility face */
+  .eyebrow {
+    @apply font-mono text-[0.72rem] uppercase tracking-[0.22em] text-ink-soft;
+  }
+
+  /* Hairline ledger grid backdrop */
+  .ledger-grid {
+    background-image: linear-gradient(
+      to right,
+      hsl(var(--line) / 0.7) 1px,
+      transparent 1px
+    );
+    background-size: 25% 100%;
+  }
+
+  .display-balance {
+    text-wrap: balance;
+  }
+
+  /* Infinite marquee for client logos */
+  .animate-marquee {
+    animation: marquee 32s linear infinite;
+  }
+
+  @keyframes marquee {
+    from { transform: translateX(0) }
+    to   { transform: translateX(-50%) }
+  }
+
+  /* Pause on hover/focus-within */
+  .marquee-track:hover .animate-marquee,
+  .marquee-track:focus-within .animate-marquee {
+    animation-play-state: paused;
+  }
+}
