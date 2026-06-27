@@ -9,11 +9,11 @@ const siteUrl = "https://finanssitaito.fi";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Yritysrahoitus ja rahoituskonsultointi 200k€ – 100M€ | Finanssitaito",
-    template: "%s · Finanssitaito",
+    default: "Yritysrahoitus ja rahoituskonsultointi 200k€ – 100M€ | Lainakompassi",
+    template: "%s · Lainakompassi",
   },
   description:
-    "Finanssitaito Oy on vuonna 2010 perustettu suomalainen rahoituskonsultointiyritys. Järjestämme yrityksille rahoitusta 200 000 – 100 000 000 euroon. Yli 450 toteutettua yritysrahoitusta ja 92 % asiakkaista saa rahoituksen.",
+    "Lainakompassi järjestää yrityksille rahoitusta 200 000 – 100 000 000 euroon. Yli 450 toteutettua yritysrahoitusta ja 92 % asiakkaista saa rahoituksen. Ilmainen alkuarviointi.",
   keywords: [
     "yritysrahoitus",
     "lainanhakupalvelu",
@@ -24,23 +24,23 @@ export const metadata: Metadata = {
     "joukkovelkakirja",
     "rahoituksen uudelleenjärjestely",
     "Mid Market Bond",
-    "Espoo",
     "Suomi",
     "rahoituskonsultti",
+    "lainakompassi",
   ],
-  authors: [{ name: "Finanssitaito Oy" }],
+  authors: [{ name: "Lainakompassi" }],
   openGraph: {
     type: "website",
     locale: "fi_FI",
     url: siteUrl,
-    siteName: "Finanssitaito",
-    title: "Yritysrahoitus ja rahoituskonsultointi 200k€ – 100M€ | Finanssitaito",
+    siteName: "Lainakompassi",
+    title: "Yritysrahoitus ja rahoituskonsultointi 200k€ – 100M€ | Lainakompassi",
     description:
       "Järjestämme yrityksille rahoitusta 200 000 – 100 000 000 euroon. Yli 450 toteutettua yritysrahoitusta — 92 % asiakkaista saa rahoituksen.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Finanssitaito — Yritysrahoitus ja rahoituskonsultointi",
+    title: "Lainakompassi — Yritysrahoitus ja rahoituskonsultointi",
     description:
       "Yritysrahoitusta yli kymmenen vuoden kokemuksella. 450+ toteutettua hanketta, 92 % onnistumisaste.",
   },
@@ -48,8 +48,6 @@ export const metadata: Metadata = {
     canonical: siteUrl,
     languages: {
       "fi": siteUrl,
-      "sv": `${siteUrl}/sv`,
-      "en": `${siteUrl}/en`,
     },
   },
   robots: {
@@ -61,22 +59,11 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "FinancialService",
-  name: "Finanssitaito Oy",
+  name: "Lainakompassi",
   description:
-    "Suomalainen rahoituskonsultointiyritys, joka järjestää yrityksille rahoitusta 200 000 – 100 000 000 euroon. Palveluita: lainanhakupalvelu, rakennushankkeen rahoitus, Mid Market Bond+, yrityskaupan rahoitus ja rahoituksen uudelleenjärjestely.",
+    "Suomalainen rahoituskonsultointipalvelu, joka järjestää yrityksille rahoitusta 200 000 – 100 000 000 euroon. Palveluita: lainanhakupalvelu, rakennushankkeen rahoitus, Mid Market Bond+, yrityskaupan rahoitus ja rahoituksen uudelleenjärjestely.",
   url: siteUrl,
-  email: "asiakaspalvelu@finanssitaito.fi",
-  telephone: "+358942703420",
-  foundingDate: "2010",
-  vatID: "FI23016101",
   areaServed: ["FI", "SE", "NO", "DK"],
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Tekniikantie 14",
-    addressLocality: "Espoo",
-    postalCode: "02150",
-    addressCountry: "FI",
-  },
 };
 
 export default function RootLayout({

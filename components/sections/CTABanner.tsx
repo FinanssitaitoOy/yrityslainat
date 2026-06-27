@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Mail, Phone } from "lucide-react";
+import { ArrowRight, Phone } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/primitives/Container";
@@ -73,13 +73,6 @@ export function CTABanner() {
             </div>
 
             <div className="mt-7 flex flex-col gap-2.5 sm:flex-row sm:gap-7">
-              <a
-                href="mailto:yrityslainat@finanssitaito.fi?subject=Yhteydenottopyynt%C3%B6"
-                className="inline-flex items-center gap-2 font-mono text-sm text-background/55 transition-colors hover:text-background/90"
-              >
-                <Mail className="size-3.5" />
-                yrityslainat@finanssitaito.fi
-              </a>
               <a
                 href={`tel:${company.phoneFull}`}
                 className="inline-flex items-center gap-2 font-mono text-sm text-background/55 transition-colors hover:text-background/90"

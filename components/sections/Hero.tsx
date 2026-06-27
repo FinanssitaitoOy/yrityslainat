@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Container } from "@/components/primitives/Container";
 import { Eyebrow } from "@/components/primitives/Eyebrow";
 import { GridBackdrop } from "@/components/visuals/GridBackdrop";
-import { GrowthChart } from "@/components/visuals/GrowthChart";
+import { TrustPanel } from "@/components/visuals/TrustPanel";
 
 const easing = [0.22, 1, 0.36, 1] as const;
 
@@ -67,7 +67,7 @@ export function Hero() {
                 </a>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <a href="#palvelut">Tutustu palveluihin</a>
+                <a href="#yhteystiedot">Laske rahoituksesi</a>
               </Button>
             </motion.div>
 
@@ -100,7 +100,7 @@ export function Hero() {
             transition={{ duration: 0.9, ease: easing, delay: 0.35 }}
             className="relative"
           >
-            <GrowthChart />
+            <TrustPanel />
           </motion.div>
         </div>
       </Container>

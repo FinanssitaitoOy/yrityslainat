@@ -16,7 +16,7 @@ export function WhyChooseUs() {
         <div className="grid gap-14 lg:grid-cols-2 lg:gap-20">
           <div>
             <Reveal>
-              <Eyebrow>Miksi Finanssitaito</Eyebrow>
+              <Eyebrow>Miksi Lainakompassi</Eyebrow>
             </Reveal>
             <Reveal delay={0.05}>
               <h2 className="mt-5 text-balance text-3xl font-semibold tracking-tightest text-ink sm:text-4xl lg:text-[2.9rem] lg:leading-[1.08]">
@@ -25,9 +25,9 @@ export function WhyChooseUs() {
             </Reveal>
             <Reveal delay={0.1}>
               <p className="mt-5 max-w-md text-lg leading-relaxed text-ink-soft">
-                Finanssitaito Oy on vuonna 2010 perustettu suomalainen
-                rahoituskonsultointiyritys. Palkkiomme perustuvat suurelta
-                osin onnistumiseen — ei pelkästä yrittämisestä.
+                Lainakompassi on suomalainen rahoituskonsultointipalvelu.
+                Palkkiomme perustuvat suurelta osin onnistumiseen — ei
+                pelkästä yrittämisestä.
               </p>
             </Reveal>
 

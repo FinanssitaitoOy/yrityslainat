@@ -15,7 +15,7 @@ export function Logo({
         className
       )}
     >
-      <span className={cn("text-brand", inverted && "text-background/80")}>Finanssi</span>taito
+      <span className={cn("text-brand", inverted && "text-background/80")}>Laina</span>kompassi
     </span>
   );
 }

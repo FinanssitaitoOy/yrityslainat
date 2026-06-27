@@ -10,8 +10,8 @@ export function Footer() {
           <div className="max-w-sm">
             <Logo />
             <p className="mt-5 text-sm leading-relaxed text-ink-soft">
-              Suomalainen rahoituskonsultointiyritys, joka järjestää yrityksille
-              rahoitusta 200 000 – 100 000 000 euroon. Perustettu vuonna {company.founded}.
+              Suomalainen rahoituskonsultointipalvelu, joka järjestää
+              yrityksille rahoitusta 200 000 – 100 000 000 euroon.
             </p>
             <div className="mt-6 space-y-1 font-mono text-sm text-ink-soft">
               <p>
@@ -21,19 +21,6 @@ export function Footer() {
                 >
                   {company.phone}
                 </a>
-              </p>
-              <p>
-                <a
-                  href={`mailto:${company.email}`}
-                  className="transition-colors hover:text-ink"
-                >
-                  {company.email}
-                </a>
-              </p>
-              <p>{company.address}</p>
-              <p className="text-ink-faint">{company.postalAddress}</p>
-              <p className="pt-1 text-ink-faint">
-                Y-tunnus: {company.businessId}
               </p>
             </div>
           </div>
@@ -61,7 +48,7 @@ export function Footer() {
 
         <div className="mt-14 flex flex-col items-start justify-between gap-6 border-t border-line pt-8 sm:flex-row sm:items-center">
           <p className="text-xs text-ink-faint">
-            © {new Date().getFullYear()} Finanssitaito Oy. Kaikki oikeudet pidätetään.
+            © {new Date().getFullYear()} Lainakompassi. Kaikki oikeudet pidätetään.
           </p>
           <div className="flex items-center gap-6">
             {socials.map((s) => (

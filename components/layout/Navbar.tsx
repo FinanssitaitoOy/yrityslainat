@@ -36,7 +36,7 @@ export function Navbar() {
       )}
     >
       <Container className="flex h-16 items-center justify-between md:h-20">
-        <a href="#top" aria-label="Finanssitaito — etusivu" className="shrink-0">
+        <a href="#top" aria-label="Lainakompassi — etusivu" className="shrink-0">
           <Logo />
         </a>
 

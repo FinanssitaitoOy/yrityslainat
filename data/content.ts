@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 
 export const company = {
-  name: "Finanssitaito",
+  name: "Lainakompassi",
   tagline: "Yritysrahoitusta yli kymmenen vuoden kokemuksella.",
   email: "asiakaspalvelu@finanssitaito.fi",
   phone: "09 42703420",
@@ -283,7 +283,7 @@ export const faqs: Faq[] = [
   {
     question: "Voiko palvelun keskeyttää kesken prosessin?",
     answer:
-      "Kyllä, palvelun voi keskeyttää. Kustannukset rajoittuvat tehtyyn työhön ja maksamattomiin palkkioihin. Finanssitaito pidättää kolmen vuoden menestyspalkkio-oikeuden myös keskeytystilanteessa.",
+      "Kyllä, palvelun voi keskeyttää. Kustannukset rajoittuvat tehtyyn työhön ja maksamattomiin palkkioihin. Lainakompassi pidättää kolmen vuoden menestyspalkkio-oikeuden myös keskeytystilanteessa.",
   },
   {
     question: "Mitä tapahtuu, jos rahoitusta ei järjesty?",
@@ -322,7 +322,7 @@ export const footerNav = {
     { label: "Palvelut rahoittajille", href: "#palvelut" },
   ],
   Yritys: [
-    { label: "Miksi Finanssitaito", href: "#miksi-me" },
+    { label: "Miksi Lainakompassi", href: "#miksi-me" },
     { label: "Prosessi", href: "#prosessi" },
     { label: "Tulokset", href: "#tulokset" },
     { label: "Yhteystiedot", href: "#yhteystiedot" },
