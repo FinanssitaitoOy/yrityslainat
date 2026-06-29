@@ -20,14 +20,13 @@ export function WhyChooseUs() {
             </Reveal>
             <Reveal delay={0.05}>
               <h2 className="mt-5 text-balance text-3xl font-semibold tracking-tightest text-ink sm:text-4xl lg:text-[2.9rem] lg:leading-[1.08]">
-                Tuloksia 15 vuoden kokemuksella.
+                Rahoitusta yrityksesi tarpeisiin.
               </h2>
             </Reveal>
             <Reveal delay={0.1}>
               <p className="mt-5 max-w-md text-lg leading-relaxed text-ink-soft">
-                Lainakompassi on suomalainen rahoituskonsultointipalvelu.
-                Palkkiomme perustuvat suurelta osin onnistumiseen — ei
-                pelkästä yrittämisestä.
+                Lainakompassi on suomalainen rahoituskonsultointipalvelu,
+                joka auttaa yrityksiä löytämään sopivat rahoitusratkaisut.
               </p>
             </Reveal>
 

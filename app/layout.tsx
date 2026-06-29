@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 
+import { ContactModalProvider } from "@/components/providers/ContactModalProvider";
 import "./globals.css";
 
 const siteUrl = "https://finanssitaito.fi";
@@ -82,7 +83,7 @@ export default function RootLayout({
         >
           Siirry sisältöön
         </a>
-        {children}
+        <ContactModalProvider>{children}</ContactModalProvider>
       </body>
     </html>
   );

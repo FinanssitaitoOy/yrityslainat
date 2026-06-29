@@ -7,8 +7,10 @@ import { Button } from "@/components/ui/button";
 import { Container } from "@/components/primitives/Container";
 import { Eyebrow } from "@/components/primitives/Eyebrow";
 import { company } from "@/data/content";
+import { useContactModal } from "@/components/providers/ContactModalProvider";
 
 export function CTABanner() {
+  const { openContactModal } = useContactModal();
   return (
     <section className="py-20 md:py-24">
       <Container>
@@ -61,14 +63,12 @@ export function CTABanner() {
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
               <Button
-                asChild
                 size="lg"
+                onClick={openContactModal}
                 className="bg-background text-ink hover:bg-background/92 active:translate-y-px"
               >
-                <a href="mailto:yrityslainat@finanssitaito.fi?subject=Yhteydenottopyynt%C3%B6">
-                  Jätä yhteydenottopyyntö
-                  <ArrowRight className="size-4" />
-                </a>
+                Jätä yhteydenottopyyntö
+                <ArrowRight className="size-4" />
               </Button>
             </div>
 

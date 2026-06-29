@@ -4,10 +4,10 @@ import { Hero } from "@/components/sections/Hero";
 import { ClientLogos } from "@/components/sections/ClientLogos";
 import { Services } from "@/components/sections/Services";
 import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
-import { Process } from "@/components/sections/Process";
 import { Sectors } from "@/components/sections/Sectors";
 import { FAQ } from "@/components/sections/FAQ";
 import { CTABanner } from "@/components/sections/CTABanner";
+import { ApplicationForm } from "@/components/sections/ApplicationForm";
 
 export default function HomePage() {
   return (
@@ -18,10 +18,10 @@ export default function HomePage() {
         <ClientLogos />
         <Services />
         <WhyChooseUs />
-        <Process />
         <Sectors />
-<FAQ />
+        <FAQ />
         <CTABanner />
+        <ApplicationForm />
       </main>
       <Footer />
     </>

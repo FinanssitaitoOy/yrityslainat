@@ -7,7 +7,6 @@ import {
   RefreshCw,
   Network,
   Award,
-  BadgePercent,
   Globe,
   ClipboardList,
   FileSearch,
@@ -125,21 +124,21 @@ export type Benefit = {
 export const benefits: Benefit[] = [
   {
     icon: Award,
-    title: "Kokeneet asiantuntijat",
+    title: "Maksuton ja luottamuksellinen arvio",
     description:
-      "Yli 15 vuoden kokemus yritysrahoituksesta. Asiantuntijamme tuntevat rahoitusmarkkinat ja löytävät juuri teille sopivimmat rahoittajat.",
+      "Arvioimme yrityksesi rahoitusmahdollisuudet maksutta ja ilman sitoumuksia.",
   },
   {
-    icon: BadgePercent,
-    title: "Tulosperusteinen palkkio",
+    icon: Briefcase,
+    title: "Yritysrahoituksen asiantuntemus",
     description:
-      "Palkkiomme perustuvat suurelta osin onnistumiseen — maksat tuloksista, ei pelkästä yrityksestä. Ei piilokuluja, ei yllätyksiä.",
+      "Autamme yrityksiä löytämään sopivia rahoitusratkaisuja erilaisiin rahoitustarpeisiin.",
   },
   {
     icon: Globe,
     title: "Laaja rahoittajaverkosto",
     description:
-      "Meillä on vakiintuneet suhteet pankkeihin, rahoituslaitoksiin ja institutionaalisiin sijoittajiin ympäri Suomen ja Pohjoismaat.",
+      "Arvioimme yrityksellesi sopivia vaihtoehtoja yhteistyössä rahoittajakumppaneidemme kanssa.",
   },
 ];
 
@@ -219,9 +218,9 @@ export const sectors: Sector[] = [
     tag: "M&A-rahoitus",
     summary:
       "Kokonaisvaltainen tuki yrityskauppojen rahoitukseen ostajan ja myyjän näkökulmasta — alusta sopimukseen asti.",
-    metricLabel: "Onnistumisaste",
-    metric: "92 %",
-    highlight: "Tulosperusteinen palkkio",
+    metricLabel: "Rahoitusmuodot",
+    metric: "Kaikki tyypit",
+    highlight: "Räätälöity ratkaisu",
   },
 ];
 

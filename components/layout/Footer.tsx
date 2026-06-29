@@ -4,7 +4,7 @@ import { Logo } from "@/components/layout/Logo";
 
 export function Footer() {
   return (
-    <footer className="border-t border-line bg-background" id="yhteystiedot">
+    <footer className="border-t border-line bg-background">
       <Container className="py-16 lg:py-20">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div className="max-w-sm">

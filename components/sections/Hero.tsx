@@ -8,6 +8,7 @@ import { Container } from "@/components/primitives/Container";
 import { Eyebrow } from "@/components/primitives/Eyebrow";
 import { GridBackdrop } from "@/components/visuals/GridBackdrop";
 import { TrustPanel } from "@/components/visuals/TrustPanel";
+import { useContactModal } from "@/components/providers/ContactModalProvider";
 
 const easing = [0.22, 1, 0.36, 1] as const;
 
@@ -21,6 +22,7 @@ const fadeUp = {
 };
 
 export function Hero() {
+  const { openContactModal } = useContactModal();
   return (
     <section id="top" className="relative isolate overflow-hidden pt-28 md:pt-32">
       <GridBackdrop />
@@ -29,7 +31,7 @@ export function Hero() {
         <div className="grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
           <div className="max-w-xl">
             <motion.div custom={0} variants={fadeUp} initial="hidden" animate="show">
-              <Eyebrow>Yritysrahoitus ja rahoituskonsultointi · Espoo</Eyebrow>
+              <Eyebrow>Yritysrahoitus</Eyebrow>
             </motion.div>
 
             <motion.h1
@@ -39,7 +41,7 @@ export function Hero() {
               animate="show"
               className="mt-6 text-balance text-[2.7rem] font-semibold leading-[1.04] tracking-tightest text-ink sm:text-6xl lg:text-[4.4rem] xl:text-[4.9rem]"
             >
-              Yritysrahoitusta yli kymmenen vuoden kokemuksella.
+              Maksuton rahoitusarvio yrityksellesi
             </motion.h1>
 
             <motion.p
@@ -49,8 +51,9 @@ export function Hero() {
               animate="show"
               className="mt-6 max-w-md text-lg leading-relaxed text-ink-soft"
             >
-              Järjestämme yrityksille rahoitusta 200 000 – 100 000 000 euroon.
-              Yli 450 toteutettua hanketta — 92&nbsp;% asiakkaistamme saa rahoituksen.
+              Selvitämme yrityksesi rahoitusmahdollisuudet yhteistyössä
+              rahoittajakumppaneidemme kanssa. Hakemuksen täyttäminen on
+              maksutonta, luottamuksellista eikä sido sinua mihinkään.
             </motion.p>
 
             <motion.div
@@ -60,11 +63,9 @@ export function Hero() {
               animate="show"
               className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center"
             >
-              <Button asChild size="lg">
-                <a href="mailto:yrityslainat@finanssitaito.fi?subject=Yhteydenottopyynt%C3%B6">
-                  Jätä yhteydenottopyyntö
-                  <ArrowRight className="size-4" />
-                </a>
+              <Button size="lg" onClick={openContactModal}>
+                Jätä yhteydenottopyyntö
+                <ArrowRight className="size-4" />
               </Button>
               <Button asChild size="lg" variant="outline">
                 <a href="#yhteystiedot">Laske rahoituksesi</a>

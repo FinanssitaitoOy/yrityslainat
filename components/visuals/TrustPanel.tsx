@@ -3,28 +3,28 @@ import { CheckCircle2 } from "lucide-react";
 const steps = [
   {
     index: "01",
-    title: "Jätä yhteydenottopyyntö",
+    title: "Jätä hakemus",
     description:
-      "Kerro rahoitustarpeesi lyhyesti — ilmainen ja sitoumukseton alkuarviointi.",
+      "Kerro yrityksesi rahoitustarpeesta. Hakemuksen täyttäminen on maksutonta, luottamuksellista eikä sido sinua mihinkään.",
   },
   {
     index: "02",
-    title: "Kartoitus ja räätälöity suunnitelma",
+    title: "Arvioimme mahdollisuutesi",
     description:
-      "Asiantuntijamme analysoi tilanteesi ja löytää sopivimmat rahoittajat verkostostamme.",
+      "Asiantuntijamme arvioi yrityksesi tilanteen ja selvittää rahoitusmahdollisuudet yhteistyössä rahoittajakumppaneidemme kanssa.",
   },
   {
     index: "03",
-    title: "Rahoitus järjestyy",
+    title: "Saat asiantuntijan arvion",
     description:
-      "Neuvottelemme parhaat ehdot puolestasi ja viemme prosessin maaliin saakka.",
+      "Saat selkeän arvion yrityksesi rahoitusmahdollisuuksista. Jos rahoitus ei vielä ole mahdollinen, kerromme mitä kannattaa kehittää ennen seuraavaa hakemusta.",
   },
 ];
 
 const trustStats = [
-  { value: "15 v", label: "kokemus" },
-  { value: "450+", label: "hanketta" },
-  { value: "92 %", label: "onnistuu" },
+  { value: "Maksuton arvio" },
+  { value: "Luottamuksellinen käsittely" },
+  { value: "Ei sitoumuksia" },
 ];
 
 export function TrustPanel() {
@@ -58,15 +58,11 @@ export function TrustPanel() {
         ))}
       </ol>
 
-      <div className="mt-8 grid grid-cols-3 gap-4 border-t border-line pt-6">
+      <div className="mt-8 flex flex-col gap-2 border-t border-line pt-6">
         {trustStats.map((stat) => (
-          <div key={stat.label}>
-            <p className="text-xl font-semibold tracking-tight text-ink">
-              {stat.value}
-            </p>
-            <p className="mt-0.5 font-mono text-[0.68rem] uppercase tracking-[0.15em] text-ink-faint">
-              {stat.label}
-            </p>
+          <div key={stat.value} className="flex items-center gap-2">
+            <CheckCircle2 className="size-3.5 shrink-0 text-accent" />
+            <p className="text-[0.85rem] text-ink-soft">{stat.value}</p>
           </div>
         ))}
       </div>
